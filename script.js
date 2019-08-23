@@ -7,7 +7,7 @@
     This is the commented program.
 
     ROGER: 08/22/19
-    
+
 */
 
 // Multiplies two numbers
@@ -102,17 +102,19 @@ function sArray(newArray) {
 let hey = sArray(newArray);
 hey.shuffledArray();
 
+
+//  Function that starts the whole game
+
 // Loop over all buttons
 let cards = Array.from(document.getElementsByClassName('button'));
 cards.forEach(card => {
     card.addEventListener('click', () => {
         let cardNumber = parseInt(card.innerHTML);
         if (cardNumber === answer) {
-            alert('Right ' + cardNumber);
-
+            alert('Correct the answer is ' + cardNumber);
         } else {
-            alert('wrong ' + cardNumber)
+            alert('Wrong you chose ' + cardNumber)
         }
-
+        location.reload();
     });
 });

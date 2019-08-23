@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+html {
+    background: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --primary-color: #2B2C28;
+    --secondary-color: #fff;
+}
+
+/**** Game GRID **************/
+
+
+/** Navigation Bar ****************/
+.navigation {
+    display: flex;
+    color: var(--secondary-color);
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#head-p-counter {
+    margin-left: 25px;
+}
+
+#head-p-icon {
+    margin-right: 25px;
+}
+
+/** Header **********************/
+.equation-container {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+}
+
+#show-equation {
+    outline: 2px solid lightblue;
+    outline-offset: 7px;
+    padding: 50px 150px;
+    background:var(--secondary-color);
+}
+
+#numbers {
+    font-size: 25px;
+}
+/****** Answer grid ************/
+
+.answer-grid {
+    grid-gap: 1rem;
+    padding: 20px;
+    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+.button {
+    display: flex;
+    font-size: 18px;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: 5px solid lightgrey;
+    cursor: pointer;
+}
